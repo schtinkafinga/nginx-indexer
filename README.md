@@ -28,7 +28,7 @@ You can also handle subdirectoris this way
         alias /usr/share/nginx/html/foobar/;
 
         sub_filter_once off;
-        sub_filter '/.theme' '/foobar/.theme';
+        sub_filter '/.nginx' '/foobar/.nginx';
 
         add_before_body /foobar/.nginx/header.html;
         add_after_body /foobar/.nginx/footer.html;
