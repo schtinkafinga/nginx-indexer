@@ -22,6 +22,21 @@ server {
 } #indexer
 ```
 
+You can also handle subdirectoris this way
+```
+    location /foobar {
+        alias /usr/share/nginx/html/foobar/;
+
+        sub_filter_once off;
+        sub_filter '/.theme' '/foobar/.theme';
+
+        add_before_body /foobar/.nginx/header.html;
+        add_after_body /foobar/.nginx/footer.html;
+
+        autoindex_exact_size off;
+        autoindex on;
+    }
+```
 Copy ```.nginx``` folder into your ```/home/web``` directory.
 
 Demo: http://indexer.zvoid.net/
