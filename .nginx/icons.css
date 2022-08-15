@@ -281,6 +281,10 @@ a[href$=".class"]:before {
 	background: url(icons/java.png);
 }
 
+a[href$=".jar"]:before {
+	background: url(icons/jar.png);
+}
+
 a[href$=".lua"]:before {
 	background: url(icons/lua.png);
 }
