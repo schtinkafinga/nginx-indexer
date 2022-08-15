@@ -39,7 +39,7 @@ You can also handle subdirectoris this way
 ```
 Copy ```.nginx``` folder into your ```/home/web``` directory.
 
-Demo: http://indexer.zvoid.net/
+Demo: https://s1.ted.ge
 
 #### BEFORE
 ![before](http://i.imgur.com/aSg9h5K.png)
